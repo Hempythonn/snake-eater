@@ -1,0 +1,233 @@
+:root {
+
+    --bg: #0a0a0a;
+    --accent: #e63946;
+    --accent2: #ff6b35;
+    --text: #f0f0f0;
+    --muted: #666666;
+
+}
+
+body {
+
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+h1 {
+
+    font-family: 'Metal Mania', cursive;
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+    color: var(--accent);
+    text-shadow: 0 0 30px rgba(230, 57, 70, 0.5);
+    margin-bottom: 4px;
+
+}
+
+p {
+
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+#gameCanvas {
+
+    border: 1px solid #222222;
+    background: #151515;
+
+}
+
+.game-wrapper {
+
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+
+}
+
+.side-panel {
+
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.score-box {
+
+    border: 1px solid #222222;
+    padding: 14px;
+    background: #111111;
+
+}
+
+.score-label {
+
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+
+}
+
+.score-value {
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+
+}
+
+.now-playing {
+
+    border: 1px solid #222222;
+    background: #111111;
+    padding: 14px;
+    min-height: 120px;
+
+}
+
+.now-playing-label {
+
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+#idleText {
+
+    font-size: 1rem;
+    color: var(--muted);
+    text-align: center;
+    padding-top: 20px;
+    line-height: 1.6;
+
+}
+
+.album-display {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+}
+
+.album-display.visible {
+
+    opacity: 1;
+
+}
+
+.album-cover-display {
+
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 20px rgba(230, 57, 70, 0.4);
+
+}
+
+.album-song {
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text);
+    line-height: 1.3;
+
+}
+
+.album-band {
+
+    font-size: 0.7rem;
+    color: var(--accent2);
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+
+.controls-box {
+
+    border: 1px solid #222222;
+    padding: 14px;
+    background: #111111;
+
+}
+
+.controls-label {
+
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.key-hint {
+
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.key {
+
+    background: #222222;
+    border: 1px solid #333333;
+    padding: 2px 7px;
+    font-size: 0.7rem;
+    font-family: monospace;
+    color: var(--text);
+    border-radius: 2px;
+
+}
+
+button {
+
+    background: var(--accent);
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+button:hover {
+
+    background: var(--accent2);
+
+}
